@@ -1,0 +1,15 @@
+{"time":"2026-09-23T11:07:39.966992456+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/je/code/openpi/wandb/offline-run-20260923_110739-qyn5k6sf/logs/debug-core.log"}
+{"time":"2026-09-23T11:07:40.069248658+08:00","level":"WARN","msg":"GraphQL client is nil, skipping feature loading"}
+{"time":"2026-09-23T11:07:40.069328271+08:00","level":"INFO","msg":"created new stream","id":"qyn5k6sf"}
+{"time":"2026-09-23T11:07:40.069345862+08:00","level":"INFO","msg":"stream: started","id":"qyn5k6sf"}
+{"time":"2026-09-23T11:07:40.069450111+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"qyn5k6sf"}
+{"time":"2026-09-23T11:07:40.06948386+08:00","level":"INFO","msg":"handler: started","stream_id":"qyn5k6sf"}
+{"time":"2026-09-23T11:07:40.069487308+08:00","level":"INFO","msg":"sender: started","stream_id":"qyn5k6sf"}
+{"time":"2026-09-23T11:07:40.071593781+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2026-09-23T11:08:17.412258797+08:00","level":"INFO","msg":"stream: closing","id":"qyn5k6sf"}
+{"time":"2026-09-23T11:08:17.412283587+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2026-09-23T11:08:17.41230384+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2026-09-23T11:08:17.412396634+08:00","level":"INFO","msg":"handler: closed","stream_id":"qyn5k6sf"}
+{"time":"2026-09-23T11:08:17.412401959+08:00","level":"INFO","msg":"sender: closed","stream_id":"qyn5k6sf"}
+{"time":"2026-09-23T11:08:17.412400683+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"qyn5k6sf"}
+{"time":"2026-09-23T11:08:17.412453355+08:00","level":"INFO","msg":"stream: closed","id":"qyn5k6sf"}

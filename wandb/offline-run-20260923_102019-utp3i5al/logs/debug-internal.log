@@ -1,0 +1,15 @@
+{"time":"2026-09-23T10:20:19.693001637+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/je/code/openpi/wandb/offline-run-20260923_102019-utp3i5al/logs/debug-core.log"}
+{"time":"2026-09-23T10:20:19.794408773+08:00","level":"WARN","msg":"GraphQL client is nil, skipping feature loading"}
+{"time":"2026-09-23T10:20:19.794473875+08:00","level":"INFO","msg":"created new stream","id":"utp3i5al"}
+{"time":"2026-09-23T10:20:19.794483867+08:00","level":"INFO","msg":"stream: started","id":"utp3i5al"}
+{"time":"2026-09-23T10:20:19.794503638+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"utp3i5al"}
+{"time":"2026-09-23T10:20:19.794505178+08:00","level":"INFO","msg":"sender: started","stream_id":"utp3i5al"}
+{"time":"2026-09-23T10:20:19.794555525+08:00","level":"INFO","msg":"handler: started","stream_id":"utp3i5al"}
+{"time":"2026-09-23T10:20:19.798221052+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2026-09-23T10:46:26.129458865+08:00","level":"INFO","msg":"stream: closing","id":"utp3i5al"}
+{"time":"2026-09-23T10:46:26.129490651+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2026-09-23T10:46:26.129889106+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2026-09-23T10:46:26.130043877+08:00","level":"INFO","msg":"handler: closed","stream_id":"utp3i5al"}
+{"time":"2026-09-23T10:46:26.130053091+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"utp3i5al"}
+{"time":"2026-09-23T10:46:26.130065769+08:00","level":"INFO","msg":"sender: closed","stream_id":"utp3i5al"}
+{"time":"2026-09-23T10:46:26.130169866+08:00","level":"INFO","msg":"stream: closed","id":"utp3i5al"}

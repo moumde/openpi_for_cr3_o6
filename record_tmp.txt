@@ -1,0 +1,225 @@
+(openpi) je@je-O-E-M:~/code/openpi$ uv run python -c "
+import pandas as pd
+
+p='/home/je/code/lerobot/dataset/cr5_o6_20250917/meta/tasks.parquet'
+df=pd.read_parquet(p)
+
+print('=== tasks.parquet ===')
+print('shape:', df.shape)
+print('columns:', df.columns.tolist())
+print(df.to_string(index=False))
+"
+=== tasks.parquet ===
+shape: (1, 2)
+columns: ['task_index', 'task']
+ task_index                                                                                   task
+          0 Pick up the motor and place it on the right side with the protruding side facing left.
+(openpi) je@je-O-E-M:~/code/openpi$ 
+(openpi) je@je-O-E-M:~/code/openpi$ uv run python -c "
+import pandas as pd
+
+p='/home/je/code/lerobot/dataset/cr5_o6_20250917/meta/episodes/chunk-000/file-000.parquet'
+df=pd.read_parquet(p)
+
+print('=== episodes parquet ===')
+print('shape:', df.shape)
+print('columns:', df.columns.tolist())
+print(df.head().to_string(index=False))
+"
+=== episodes parquet ===
+shape: (94, 121)
+columns: ['episode_index', 'tasks', 'length', 'data/chunk_index', 'data/file_index', 'dataset_from_index', 'dataset_to_index', 'videos/observation.images.base_0_rgb/chunk_index', 'videos/observation.images.base_0_rgb/file_index', 'videos/observation.images.base_0_rgb/from_timestamp', 'videos/observation.images.base_0_rgb/to_timestamp', 'videos/observation.images.left_wrist_0_rgb/chunk_index', 'videos/observation.images.left_wrist_0_rgb/file_index', 'videos/observation.images.left_wrist_0_rgb/from_timestamp', 'videos/observation.images.left_wrist_0_rgb/to_timestamp', 'videos/observation.images.right_wrist_0_rgb/chunk_index', 'videos/observation.images.right_wrist_0_rgb/file_index', 'videos/observation.images.right_wrist_0_rgb/from_timestamp', 'videos/observation.images.right_wrist_0_rgb/to_timestamp', 'stats/observation.state/min', 'stats/observation.state/max', 'stats/observation.state/mean', 'stats/observation.state/std', 'stats/observation.state/count', 'stats/observation.state/q01', 'stats/observation.state/q10', 'stats/observation.state/q50', 'stats/observation.state/q90', 'stats/observation.state/q99', 'stats/action/min', 'stats/action/max', 'stats/action/mean', 'stats/action/std', 'stats/action/count', 'stats/action/q01', 'stats/action/q10', 'stats/action/q50', 'stats/action/q90', 'stats/action/q99', 'stats/timestamp/min', 'stats/timestamp/max', 'stats/timestamp/mean', 'stats/timestamp/std', 'stats/timestamp/count', 'stats/timestamp/q01', 'stats/timestamp/q10', 'stats/timestamp/q50', 'stats/timestamp/q90', 'stats/timestamp/q99', 'stats/frame_index/min', 'stats/frame_index/max', 'stats/frame_index/mean', 'stats/frame_index/std', 'stats/frame_index/count', 'stats/frame_index/q01', 'stats/frame_index/q10', 'stats/frame_index/q50', 'stats/frame_index/q90', 'stats/frame_index/q99', 'stats/episode_index/min', 'stats/episode_index/max', 'stats/episode_index/mean', 'stats/episode_index/std', 'stats/episode_index/count', 'stats/episode_index/q01', 'stats/episode_index/q10', 'stats/episode_index/q50', 'stats/episode_index/q90', 'stats/episode_index/q99', 'stats/index/min', 'stats/index/max', 'stats/index/mean', 'stats/index/std', 'stats/index/count', 'stats/index/q01', 'stats/index/q10', 'stats/index/q50', 'stats/index/q90', 'stats/index/q99', 'stats/task_index/min', 'stats/task_index/max', 'stats/task_index/mean', 'stats/task_index/std', 'stats/task_index/count', 'stats/task_index/q01', 'stats/task_index/q10', 'stats/task_index/q50', 'stats/task_index/q90', 'stats/task_index/q99', 'stats/observation.images.base_0_rgb/min', 'stats/observation.images.base_0_rgb/max', 'stats/observation.images.base_0_rgb/mean', 'stats/observation.images.base_0_rgb/std', 'stats/observation.images.base_0_rgb/count', 'stats/observation.images.base_0_rgb/q01', 'stats/observation.images.base_0_rgb/q10', 'stats/observation.images.base_0_rgb/q50', 'stats/observation.images.base_0_rgb/q90', 'stats/observation.images.base_0_rgb/q99', 'stats/observation.images.left_wrist_0_rgb/min', 'stats/observation.images.left_wrist_0_rgb/max', 'stats/observation.images.left_wrist_0_rgb/mean', 'stats/observation.images.left_wrist_0_rgb/std', 'stats/observation.images.left_wrist_0_rgb/count', 'stats/observation.images.left_wrist_0_rgb/q01', 'stats/observation.images.left_wrist_0_rgb/q10', 'stats/observation.images.left_wrist_0_rgb/q50', 'stats/observation.images.left_wrist_0_rgb/q90', 'stats/observation.images.left_wrist_0_rgb/q99', 'stats/observation.images.right_wrist_0_rgb/min', 'stats/observation.images.right_wrist_0_rgb/max', 'stats/observation.images.right_wrist_0_rgb/mean', 'stats/observation.images.right_wrist_0_rgb/std', 'stats/observation.images.right_wrist_0_rgb/count', 'stats/observation.images.right_wrist_0_rgb/q01', 'stats/observation.images.right_wrist_0_rgb/q10', 'stats/observation.images.right_wrist_0_rgb/q50', 'stats/observation.images.right_wrist_0_rgb/q90', 'stats/observation.images.right_wrist_0_rgb/q99', 'meta/episodes/chunk_index', 'meta/episodes/file_index']
+ episode_index                                                                                    tasks  length  data/chunk_index  data/file_index  dataset_from_index  dataset_to_index  videos/observation.images.base_0_rgb/chunk_index  videos/observation.images.base_0_rgb/file_index  videos/observation.images.base_0_rgb/from_timestamp  videos/observation.images.base_0_rgb/to_timestamp  videos/observation.images.left_wrist_0_rgb/chunk_index  videos/observation.images.left_wrist_0_rgb/file_index  videos/observation.images.left_wrist_0_rgb/from_timestamp  videos/observation.images.left_wrist_0_rgb/to_timestamp  videos/observation.images.right_wrist_0_rgb/chunk_index  videos/observation.images.right_wrist_0_rgb/file_index  videos/observation.images.right_wrist_0_rgb/from_timestamp  videos/observation.images.right_wrist_0_rgb/to_timestamp                                                                                                                                                  stats/observation.state/min                                                                                                                                        stats/observation.state/max                                                                                                                                                                            stats/observation.state/mean                                                                                                                                                                           stats/observation.state/std                                stats/observation.state/count                                                                                                                                                 stats/observation.state/q01                                                                                                                                               stats/observation.state/q10                                                                                                                                        stats/observation.state/q50                                                                                                                                        stats/observation.state/q90                                                                                                                                          stats/observation.state/q99                                                                                                                                                          stats/action/min                                                                                                                                                     stats/action/max                                                                                                                                                                                      stats/action/mean                                                                                                                                                                                        stats/action/std                                           stats/action/count                                                                                                                                                          stats/action/q01                                                                                                                                                             stats/action/q10                                                                                                                                                    stats/action/q50                                                                                                                                                   stats/action/q90                                                                                                                                                    stats/action/q99 stats/timestamp/min  stats/timestamp/max stats/timestamp/mean stats/timestamp/std stats/timestamp/count   stats/timestamp/q01  stats/timestamp/q10  stats/timestamp/q50  stats/timestamp/q90  stats/timestamp/q99 stats/frame_index/min stats/frame_index/max stats/frame_index/mean stats/frame_index/std stats/frame_index/count stats/frame_index/q01 stats/frame_index/q10 stats/frame_index/q50 stats/frame_index/q90 stats/frame_index/q99 stats/episode_index/min stats/episode_index/max stats/episode_index/mean stats/episode_index/std stats/episode_index/count stats/episode_index/q01 stats/episode_index/q10 stats/episode_index/q50 stats/episode_index/q90 stats/episode_index/q99 stats/index/min stats/index/max stats/index/mean      stats/index/std stats/index/count stats/index/q01 stats/index/q10 stats/index/q50      stats/index/q90 stats/index/q99 stats/task_index/min stats/task_index/max stats/task_index/mean stats/task_index/std stats/task_index/count stats/task_index/q01 stats/task_index/q10 stats/task_index/q50 stats/task_index/q90 stats/task_index/q99                                      stats/observation.images.base_0_rgb/min    stats/observation.images.base_0_rgb/max                                    stats/observation.images.base_0_rgb/mean                                     stats/observation.images.base_0_rgb/std stats/observation.images.base_0_rgb/count                                     stats/observation.images.base_0_rgb/q01                                    stats/observation.images.base_0_rgb/q10                                     stats/observation.images.base_0_rgb/q50                                  stats/observation.images.base_0_rgb/q90                                  stats/observation.images.base_0_rgb/q99 stats/observation.images.left_wrist_0_rgb/min stats/observation.images.left_wrist_0_rgb/max                             stats/observation.images.left_wrist_0_rgb/mean                               stats/observation.images.left_wrist_0_rgb/std stats/observation.images.left_wrist_0_rgb/count                                 stats/observation.images.left_wrist_0_rgb/q01                               stats/observation.images.left_wrist_0_rgb/q10                              stats/observation.images.left_wrist_0_rgb/q50                            stats/observation.images.left_wrist_0_rgb/q90                            stats/observation.images.left_wrist_0_rgb/q99 stats/observation.images.right_wrist_0_rgb/min stats/observation.images.right_wrist_0_rgb/max                            stats/observation.images.right_wrist_0_rgb/mean                              stats/observation.images.right_wrist_0_rgb/std stats/observation.images.right_wrist_0_rgb/count                                stats/observation.images.right_wrist_0_rgb/q01                              stats/observation.images.right_wrist_0_rgb/q10                             stats/observation.images.right_wrist_0_rgb/q50                           stats/observation.images.right_wrist_0_rgb/q90                           stats/observation.images.right_wrist_0_rgb/q99  meta/episodes/chunk_index  meta/episodes/file_index
+             0 [Pick up the motor and place it on the right side with the protruding side facing left.]     522                 0                0                   0               522                                                 0                                                0                                                 0.00                                              26.10                                                       0                                                      0                                                       0.00                                                    26.10                                                        0                                                       0                                                        0.00                                                     26.10  [-0.00018866255413740873, -1.1388012170791626, -0.005917692091315985, -0.0014215362025424838, -0.49951329827308655, -0.1077895238995552, 117.0, 84.0, 145.0, 0.0, 0.0, 0.0]    [0.33320844173431396, -0.001077512395568192, 0.2882993221282959, 1.7738546133041382, 0.3434572219848633, 1.4994686841964722, 157.0, 94.0, 175.0, 0.0, 0.0, 0.0]    [0.15445391546373508, -0.8459721949104027, 0.19534578185548143, 1.3411679419084948, -0.26666554887827004, 0.806137137075193, 135.53639846743295, 88.9521072796935, 159.6417624521073, 0.0, 0.0, 0.0] [0.12020894796847098, 0.20629096209816494, 0.07720053515945628, 0.31676929750338284, 0.1777551532285801, 0.5848507903303674, 19.741325677861212, 4.70016765862051, 14.336808558824483, 0.0, 0.0, 0.0] [522, 522, 522, 522, 522, 522, 522, 522, 522, 522, 522, 522]     [0.005363934836350381, -1.1379994451999664, -0.00026533073076279835, 0.0664171388745308, -0.49946666896343234, -0.10739871576428413, 117.0, 84.0, 145.0, 0.0, 0.0, 0.0]        [0.011578754987567663, -1.0777859210968017, 0.09283144548535346, 1.1375741600990295, -0.49531951546669006, 0.03627185337245465, 117.0, 84.0, 145.0, 0.0, 0.0, 0.0]     [0.10103395953774452, -0.9207578301429749, 0.2223503515124321, 1.3127538561820984, -0.2478722408413887, 1.0070273280143738, 117.0, 85.0, 147.0, 0.0, 0.0, 0.0]     [0.3143327921628952, -0.6125978767871855, 0.28628087043762207, 1.7468497276306152, -0.08639966025948517, 1.486889362335205, 157.0, 94.0, 175.0, 0.0, 0.0, 0.0]     [0.33284008502960205, -0.038410338312388104, 0.28829469412565234, 1.7736020851135255, 0.3356029501557348, 1.4981359887123107, 157.0, 94.0, 175.0, 0.0, 0.0, 0.0]  [-0.011788632720708847, -1.142685890197754, -0.0002746015088632703, -0.001410735654644668, -0.49946001172065735, -0.11810483038425446, 78.0, 85.0, 123.0, 0.0, 0.0, 0.0]      [0.34256091713905334, -0.0010959039209410548, 0.2916666567325592, 1.7830631732940674, 0.3391672968864441, 1.500091552734375, 157.0, 95.0, 175.0, 0.0, 0.0, 0.0]    [0.14271661934557506, -0.8295050157636397, 0.1938301397311783, 1.302412493661549, -0.2635978362515214, 0.7846447967874828, 114.91379310344827, 89.66091954022988, 147.3065134099617, 0.0, 0.0, 0.0]     [0.12598245188340973, 0.2567042691088433, 0.08334266250999929, 0.40224629304393117, 0.1665239449007313, 0.594260773955881, 39.40197402258845, 4.976377677249771, 25.944789518694567, 0.0, 0.0, 0.0] [522, 522, 522, 522, 522, 522, 522, 522, 522, 522, 522, 522]  [-0.011788632720708847, -1.142685890197754, -0.0002746015088632703, -0.001410735654644668, -0.49945646315813064, -0.10966793447732925, 78.0, 85.0, 123.0, 0.0, 0.0, 0.0]       [-0.00018925583572126925, -1.0785588383674622, 0.06741399765014648, 1.1185752511024476, -0.4943978786468506, -6.509949344035704e-06, 78.0, 85.0, 123.0, 0.0, 0.0, 0.0]       [0.09282885491847992, -0.9233266711235046, 0.22248411178588867, 1.2954107522964478, -0.2480405569076538, 0.978691428899765, 78.0, 85.0, 123.0, 0.0, 0.0, 0.0]   [0.3155628740787506, -0.6216233313083648, 0.28660452365875244, 1.7358165979385376, -0.0002963506558444351, 1.486592411994934, 157.0, 95.0, 175.0, 0.0, 0.0, 0.0]    [0.34256091713905334, -0.0010959039209410548, 0.28829190135002136, 1.782708842754364, 0.26154892295598986, 1.500091552734375, 157.0, 95.0, 175.0, 0.0, 0.0, 0.0]               [0.0] [26.049999237060547]  [13.02499999855984] [7.534407185424587]                 [522] [0.26050000250339506] [2.6049999237060546] [13.025000095367432] [23.445000648498535]  [25.78949939727783]                 [0.0]               [521.0]                [260.5]  [150.68814374948903]                   [522]                [5.21]                [52.1]               [260.5]  [468.90000000000003]              [515.79]                   [0.0]                   [0.0]                    [0.0]                   [0.0]                     [522]                   [0.0]                   [0.0]                   [0.0]                   [0.0]                   [0.0]           [0.0]         [521.0]          [260.5] [150.68814374948903]             [522]          [5.21]          [52.1]         [260.5] [468.90000000000003]        [515.79]                [0.0]                [0.0]                 [0.0]                [0.0]                  [522]                [0.0]                [0.0]                [0.0]                [0.0]                [0.0] [[[0.03921568766236305]], [[0.05098039284348488]], [[0.027450980618596077]]] [[[1.0]], [[1.0]], [[0.9960784316062927]]]   [[[0.4208449125289917]], [[0.4082183539867401]], [[0.36686602234840393]]]   [[[0.1359965056180954]], [[0.15632374584674835]], [[0.1840553730726242]]]                                [10022400] [[[0.14902367579687315]], [[0.14893400726015693]], [[0.12152983085789386]]] [[[0.2510700729411367]], [[0.23142457484950285]], [[0.16089727218658614]]] [[[0.41185917228876046]], [[0.38041283140800386]], [[0.36071801501719236]]] [[[0.5726514973715822]], [[0.6116981812357581]], [[0.6115811402522343]]] [[[0.8746702115250266]], [[0.8235357864715395]], [[0.7960053791503001]]]  [[[0.0]], [[0.007843137718737125]], [[0.0]]]                   [[[1.0]], [[1.0]], [[1.0]]] [[[0.43758487701416016]], [[0.42723971605300903]], [[0.3945941627025604]]]  [[[0.19201327860355377]], [[0.18183454871177673]], [[0.1899918019771576]]]                                      [10022400]    [[[0.0509979544809091]], [[0.058996287335746585]], [[0.0430895009455983]]]   [[[0.2001586877811392]], [[0.18793936450316637]], [[0.1568652739364295]]] [[[0.43138046003947744]], [[0.41170317107131155]], [[0.3805705997397211]]]  [[[0.6863322670916339]], [[0.6628421180525498]], [[0.650801657196086]]]  [[[0.988226469082488]], [[0.9881670362268004]], [[0.9764140777457019]]]                    [[[0.0]], [[0.0]], [[0.0]]]                    [[[1.0]], [[1.0]], [[1.0]]]  [[[0.5049394369125366]], [[0.46889418363571167]], [[0.4166523516178131]]] [[[0.16618262231349945]], [[0.16887976229190826]], [[0.19391344487667084]]]                                       [10022400] [[[0.050903428588269045]], [[0.050940878221619385]], [[0.03130026810544779]]]  [[[0.30191850542664433]], [[0.2783143209012785]], [[0.18433474219198862]]] [[[0.5254869044888945]], [[0.46664621362047565]], [[0.37645449724580143]]] [[[0.6669223014992297]], [[0.6823741044041118]], [[0.6784350654739636]]] [[[0.9490177935695735]], [[0.8862680977043599]], [[0.8941607499729737]]]                          0                         0
+
+(openpi) je@je-O-E-M:~/code/openpi$ uv run python -c "
+import json
+
+p='/home/je/code/lerobot/dataset/cr5_o6_20250917/meta/info.json'
+
+with open(p) as f:
+    info=json.load(f)
+
+print(json.dumps(info, indent=2))
+"
+{
+  "codebase_version": "v3.0",
+  "fps": 20,
+  "features": {
+    "observation.state": {
+      "dtype": "float32",
+      "shape": [
+        12
+      ],
+      "names": [
+        "cr3.q1.rad",
+        "cr3.q2.rad",
+        "cr3.q3.rad",
+        "cr3.q4.rad",
+        "cr3.q5.rad",
+        "cr3.q6.rad",
+        "o6.thumb_flex.position",
+        "o6.thumb_yaw.position",
+        "o6.index_flex.position",
+        "o6.middle_flex.position",
+        "o6.ring_flex.position",
+        "o6.little_flex.position"
+      ]
+    },
+    "action": {
+      "dtype": "float32",
+      "shape": [
+        12
+      ],
+      "names": [
+        "cr3.target_q1.rad",
+        "cr3.target_q2.rad",
+        "cr3.target_q3.rad",
+        "cr3.target_q4.rad",
+        "cr3.target_q5.rad",
+        "cr3.target_q6.rad",
+        "o6.thumb_flex.command",
+        "o6.thumb_yaw.command",
+        "o6.index_flex.command",
+        "o6.middle_flex.command",
+        "o6.ring_flex.command",
+        "o6.little_flex.command"
+      ]
+    },
+    "observation.images.base_0_rgb": {
+      "dtype": "video",
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channel"
+      ],
+      "info": {
+        "video.height": 480,
+        "video.width": 640,
+        "video.codec": "h264",
+        "video.pix_fmt": "yuv420p",
+        "video.fps": 20,
+        "video.channels": 3,
+        "has_audio": false,
+        "video.g": 20,
+        "video.crf": 18,
+        "video.preset": "fast",
+        "video.fast_decode": 0,
+        "video.video_backend": "pyav",
+        "video.extra_options": {},
+        "is_depth_map": false
+      }
+    },
+    "observation.images.left_wrist_0_rgb": {
+      "dtype": "video",
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channel"
+      ],
+      "info": {
+        "video.height": 480,
+        "video.width": 640,
+        "video.codec": "h264",
+        "video.pix_fmt": "yuv420p",
+        "video.fps": 20,
+        "video.channels": 3,
+        "has_audio": false,
+        "video.g": 20,
+        "video.crf": 18,
+        "video.preset": "fast",
+        "video.fast_decode": 0,
+        "video.video_backend": "pyav",
+        "video.extra_options": {},
+        "is_depth_map": false
+      }
+    },
+    "observation.images.right_wrist_0_rgb": {
+      "dtype": "video",
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channel"
+      ],
+      "info": {
+        "video.height": 480,
+        "video.width": 640,
+        "video.codec": "h264",
+        "video.pix_fmt": "yuv420p",
+        "video.fps": 20,
+        "video.channels": 3,
+        "has_audio": false,
+        "video.g": 20,
+        "video.crf": 18,
+        "video.preset": "fast",
+        "video.fast_decode": 0,
+        "video.video_backend": "pyav",
+        "video.extra_options": {},
+        "is_depth_map": false
+      }
+    },
+    "timestamp": {
+      "dtype": "float32",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "frame_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "episode_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "task_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    }
+  },
+  "total_episodes": 94,
+  "total_frames": 48655,
+  "total_tasks": 1,
+  "chunks_size": 1000,
+  "data_files_size_in_mb": 100,
+  "video_files_size_in_mb": 200,
+  "data_path": "data/chunk-{chunk_index:03d}/file-{file_index:03d}.parquet",
+  "video_path": "videos/{video_key}/chunk-{chunk_index:03d}/file-{file_index:03d}.mp4",
+  "robot_type": "dobot_cr3_o6",
+  "splits": {
+    "train": "0:94"
+  }
+}
+

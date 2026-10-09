@@ -1,0 +1,15 @@
+{"time":"2026-09-23T10:11:07.434637384+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/je/code/openpi/wandb/offline-run-20260923_101107-olhcug39/logs/debug-core.log"}
+{"time":"2026-09-23T10:11:07.537029986+08:00","level":"WARN","msg":"GraphQL client is nil, skipping feature loading"}
+{"time":"2026-09-23T10:11:07.537093364+08:00","level":"INFO","msg":"created new stream","id":"olhcug39"}
+{"time":"2026-09-23T10:11:07.53710467+08:00","level":"INFO","msg":"stream: started","id":"olhcug39"}
+{"time":"2026-09-23T10:11:07.537218682+08:00","level":"INFO","msg":"sender: started","stream_id":"olhcug39"}
+{"time":"2026-09-23T10:11:07.537218638+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"olhcug39"}
+{"time":"2026-09-23T10:11:07.537237114+08:00","level":"INFO","msg":"handler: started","stream_id":"olhcug39"}
+{"time":"2026-09-23T10:11:07.541162774+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2026-09-23T10:11:18.552057077+08:00","level":"INFO","msg":"stream: closing","id":"olhcug39"}
+{"time":"2026-09-23T10:11:18.552074566+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2026-09-23T10:11:18.552113484+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2026-09-23T10:11:18.552150747+08:00","level":"INFO","msg":"handler: closed","stream_id":"olhcug39"}
+{"time":"2026-09-23T10:11:18.552153535+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"olhcug39"}
+{"time":"2026-09-23T10:11:18.552161633+08:00","level":"INFO","msg":"sender: closed","stream_id":"olhcug39"}
+{"time":"2026-09-23T10:11:18.55221156+08:00","level":"INFO","msg":"stream: closed","id":"olhcug39"}

@@ -1,0 +1,634 @@
+[
+  {
+    "source": "/home/ace/datasets/data",
+    "episodes": 156,
+    "frames": 84710,
+    "episode_mapping": [
+      {
+        "source_episode": 0,
+        "output_episode": 0
+      },
+      {
+        "source_episode": 1,
+        "output_episode": 1
+      },
+      {
+        "source_episode": 2,
+        "output_episode": 2
+      },
+      {
+        "source_episode": 3,
+        "output_episode": 3
+      },
+      {
+        "source_episode": 4,
+        "output_episode": 4
+      },
+      {
+        "source_episode": 5,
+        "output_episode": 5
+      },
+      {
+        "source_episode": 6,
+        "output_episode": 6
+      },
+      {
+        "source_episode": 7,
+        "output_episode": 7
+      },
+      {
+        "source_episode": 8,
+        "output_episode": 8
+      },
+      {
+        "source_episode": 9,
+        "output_episode": 9
+      },
+      {
+        "source_episode": 10,
+        "output_episode": 10
+      },
+      {
+        "source_episode": 11,
+        "output_episode": 11
+      },
+      {
+        "source_episode": 12,
+        "output_episode": 12
+      },
+      {
+        "source_episode": 13,
+        "output_episode": 13
+      },
+      {
+        "source_episode": 14,
+        "output_episode": 14
+      },
+      {
+        "source_episode": 15,
+        "output_episode": 15
+      },
+      {
+        "source_episode": 16,
+        "output_episode": 16
+      },
+      {
+        "source_episode": 17,
+        "output_episode": 17
+      },
+      {
+        "source_episode": 18,
+        "output_episode": 18
+      },
+      {
+        "source_episode": 19,
+        "output_episode": 19
+      },
+      {
+        "source_episode": 20,
+        "output_episode": 20
+      },
+      {
+        "source_episode": 21,
+        "output_episode": 21
+      },
+      {
+        "source_episode": 22,
+        "output_episode": 22
+      },
+      {
+        "source_episode": 23,
+        "output_episode": 23
+      },
+      {
+        "source_episode": 24,
+        "output_episode": 24
+      },
+      {
+        "source_episode": 25,
+        "output_episode": 25
+      },
+      {
+        "source_episode": 26,
+        "output_episode": 26
+      },
+      {
+        "source_episode": 27,
+        "output_episode": 27
+      },
+      {
+        "source_episode": 28,
+        "output_episode": 28
+      },
+      {
+        "source_episode": 29,
+        "output_episode": 29
+      },
+      {
+        "source_episode": 30,
+        "output_episode": 30
+      },
+      {
+        "source_episode": 31,
+        "output_episode": 31
+      },
+      {
+        "source_episode": 32,
+        "output_episode": 32
+      },
+      {
+        "source_episode": 33,
+        "output_episode": 33
+      },
+      {
+        "source_episode": 34,
+        "output_episode": 34
+      },
+      {
+        "source_episode": 35,
+        "output_episode": 35
+      },
+      {
+        "source_episode": 36,
+        "output_episode": 36
+      },
+      {
+        "source_episode": 37,
+        "output_episode": 37
+      },
+      {
+        "source_episode": 38,
+        "output_episode": 38
+      },
+      {
+        "source_episode": 39,
+        "output_episode": 39
+      },
+      {
+        "source_episode": 40,
+        "output_episode": 40
+      },
+      {
+        "source_episode": 41,
+        "output_episode": 41
+      },
+      {
+        "source_episode": 42,
+        "output_episode": 42
+      },
+      {
+        "source_episode": 43,
+        "output_episode": 43
+      },
+      {
+        "source_episode": 44,
+        "output_episode": 44
+      },
+      {
+        "source_episode": 45,
+        "output_episode": 45
+      },
+      {
+        "source_episode": 46,
+        "output_episode": 46
+      },
+      {
+        "source_episode": 47,
+        "output_episode": 47
+      },
+      {
+        "source_episode": 48,
+        "output_episode": 48
+      },
+      {
+        "source_episode": 49,
+        "output_episode": 49
+      },
+      {
+        "source_episode": 50,
+        "output_episode": 50
+      },
+      {
+        "source_episode": 51,
+        "output_episode": 51
+      },
+      {
+        "source_episode": 52,
+        "output_episode": 52
+      },
+      {
+        "source_episode": 53,
+        "output_episode": 53
+      },
+      {
+        "source_episode": 54,
+        "output_episode": 54
+      },
+      {
+        "source_episode": 55,
+        "output_episode": 55
+      },
+      {
+        "source_episode": 56,
+        "output_episode": 56
+      },
+      {
+        "source_episode": 57,
+        "output_episode": 57
+      },
+      {
+        "source_episode": 58,
+        "output_episode": 58
+      },
+      {
+        "source_episode": 59,
+        "output_episode": 59
+      },
+      {
+        "source_episode": 60,
+        "output_episode": 60
+      },
+      {
+        "source_episode": 61,
+        "output_episode": 61
+      },
+      {
+        "source_episode": 62,
+        "output_episode": 62
+      },
+      {
+        "source_episode": 63,
+        "output_episode": 63
+      },
+      {
+        "source_episode": 64,
+        "output_episode": 64
+      },
+      {
+        "source_episode": 65,
+        "output_episode": 65
+      },
+      {
+        "source_episode": 66,
+        "output_episode": 66
+      },
+      {
+        "source_episode": 67,
+        "output_episode": 67
+      },
+      {
+        "source_episode": 68,
+        "output_episode": 68
+      },
+      {
+        "source_episode": 69,
+        "output_episode": 69
+      },
+      {
+        "source_episode": 70,
+        "output_episode": 70
+      },
+      {
+        "source_episode": 71,
+        "output_episode": 71
+      },
+      {
+        "source_episode": 72,
+        "output_episode": 72
+      },
+      {
+        "source_episode": 73,
+        "output_episode": 73
+      },
+      {
+        "source_episode": 74,
+        "output_episode": 74
+      },
+      {
+        "source_episode": 75,
+        "output_episode": 75
+      },
+      {
+        "source_episode": 76,
+        "output_episode": 76
+      },
+      {
+        "source_episode": 77,
+        "output_episode": 77
+      },
+      {
+        "source_episode": 78,
+        "output_episode": 78
+      },
+      {
+        "source_episode": 79,
+        "output_episode": 79
+      },
+      {
+        "source_episode": 80,
+        "output_episode": 80
+      },
+      {
+        "source_episode": 81,
+        "output_episode": 81
+      },
+      {
+        "source_episode": 82,
+        "output_episode": 82
+      },
+      {
+        "source_episode": 83,
+        "output_episode": 83
+      },
+      {
+        "source_episode": 84,
+        "output_episode": 84
+      },
+      {
+        "source_episode": 85,
+        "output_episode": 85
+      },
+      {
+        "source_episode": 86,
+        "output_episode": 86
+      },
+      {
+        "source_episode": 87,
+        "output_episode": 87
+      },
+      {
+        "source_episode": 88,
+        "output_episode": 88
+      },
+      {
+        "source_episode": 89,
+        "output_episode": 89
+      },
+      {
+        "source_episode": 90,
+        "output_episode": 90
+      },
+      {
+        "source_episode": 91,
+        "output_episode": 91
+      },
+      {
+        "source_episode": 92,
+        "output_episode": 92
+      },
+      {
+        "source_episode": 93,
+        "output_episode": 93
+      },
+      {
+        "source_episode": 94,
+        "output_episode": 94
+      },
+      {
+        "source_episode": 95,
+        "output_episode": 95
+      },
+      {
+        "source_episode": 96,
+        "output_episode": 96
+      },
+      {
+        "source_episode": 97,
+        "output_episode": 97
+      },
+      {
+        "source_episode": 98,
+        "output_episode": 98
+      },
+      {
+        "source_episode": 99,
+        "output_episode": 99
+      },
+      {
+        "source_episode": 100,
+        "output_episode": 100
+      },
+      {
+        "source_episode": 101,
+        "output_episode": 101
+      },
+      {
+        "source_episode": 102,
+        "output_episode": 102
+      },
+      {
+        "source_episode": 103,
+        "output_episode": 103
+      },
+      {
+        "source_episode": 104,
+        "output_episode": 104
+      },
+      {
+        "source_episode": 105,
+        "output_episode": 105
+      },
+      {
+        "source_episode": 106,
+        "output_episode": 106
+      },
+      {
+        "source_episode": 107,
+        "output_episode": 107
+      },
+      {
+        "source_episode": 108,
+        "output_episode": 108
+      },
+      {
+        "source_episode": 109,
+        "output_episode": 109
+      },
+      {
+        "source_episode": 110,
+        "output_episode": 110
+      },
+      {
+        "source_episode": 111,
+        "output_episode": 111
+      },
+      {
+        "source_episode": 112,
+        "output_episode": 112
+      },
+      {
+        "source_episode": 113,
+        "output_episode": 113
+      },
+      {
+        "source_episode": 114,
+        "output_episode": 114
+      },
+      {
+        "source_episode": 115,
+        "output_episode": 115
+      },
+      {
+        "source_episode": 116,
+        "output_episode": 116
+      },
+      {
+        "source_episode": 117,
+        "output_episode": 117
+      },
+      {
+        "source_episode": 118,
+        "output_episode": 118
+      },
+      {
+        "source_episode": 119,
+        "output_episode": 119
+      },
+      {
+        "source_episode": 120,
+        "output_episode": 120
+      },
+      {
+        "source_episode": 121,
+        "output_episode": 121
+      },
+      {
+        "source_episode": 122,
+        "output_episode": 122
+      },
+      {
+        "source_episode": 123,
+        "output_episode": 123
+      },
+      {
+        "source_episode": 124,
+        "output_episode": 124
+      },
+      {
+        "source_episode": 125,
+        "output_episode": 125
+      },
+      {
+        "source_episode": 126,
+        "output_episode": 126
+      },
+      {
+        "source_episode": 127,
+        "output_episode": 127
+      },
+      {
+        "source_episode": 128,
+        "output_episode": 128
+      },
+      {
+        "source_episode": 129,
+        "output_episode": 129
+      },
+      {
+        "source_episode": 130,
+        "output_episode": 130
+      },
+      {
+        "source_episode": 131,
+        "output_episode": 131
+      },
+      {
+        "source_episode": 132,
+        "output_episode": 132
+      },
+      {
+        "source_episode": 133,
+        "output_episode": 133
+      },
+      {
+        "source_episode": 134,
+        "output_episode": 134
+      },
+      {
+        "source_episode": 135,
+        "output_episode": 135
+      },
+      {
+        "source_episode": 136,
+        "output_episode": 136
+      },
+      {
+        "source_episode": 137,
+        "output_episode": 137
+      },
+      {
+        "source_episode": 138,
+        "output_episode": 138
+      },
+      {
+        "source_episode": 139,
+        "output_episode": 139
+      },
+      {
+        "source_episode": 140,
+        "output_episode": 140
+      },
+      {
+        "source_episode": 141,
+        "output_episode": 141
+      },
+      {
+        "source_episode": 142,
+        "output_episode": 142
+      },
+      {
+        "source_episode": 143,
+        "output_episode": 143
+      },
+      {
+        "source_episode": 144,
+        "output_episode": 144
+      },
+      {
+        "source_episode": 145,
+        "output_episode": 145
+      },
+      {
+        "source_episode": 146,
+        "output_episode": 146
+      },
+      {
+        "source_episode": 147,
+        "output_episode": 147
+      },
+      {
+        "source_episode": 148,
+        "output_episode": 148
+      },
+      {
+        "source_episode": 149,
+        "output_episode": 149
+      },
+      {
+        "source_episode": 150,
+        "output_episode": 150
+      },
+      {
+        "source_episode": 151,
+        "output_episode": 151
+      },
+      {
+        "source_episode": 152,
+        "output_episode": 152
+      },
+      {
+        "source_episode": 153,
+        "output_episode": 153
+      },
+      {
+        "source_episode": 154,
+        "output_episode": 154
+      },
+      {
+        "source_episode": 155,
+        "output_episode": 155
+      }
+    ],
+    "excluded_episodes": []
+  }
+]

@@ -1,0 +1,1084 @@
+{
+  "result": "V21_VERIFY_OK",
+  "dataset": "/home/ace/datasets/data_v21",
+  "repo_id": "local/data_v21",
+  "codebase_version": "v2.1",
+  "total_episodes": 156,
+  "total_frames": 84710,
+  "total_tasks": 1,
+  "total_videos": 468,
+  "fps": 20,
+  "robot_type": "cr3_o6",
+  "merged_source": "/home/ace/datasets/data",
+  "checked_with": "/home/ace/cyf/openpi_cr3_o6/.venv (lerobot v2.1, datasets 3.6.0)",
+  "checks": {
+    "episode_order_matches_merged": "pass",
+    "episode_lengths_sum_to_total_frames": "pass",
+    "one_parquet_and_three_videos_per_episode": "pass (156 data + 468 video files)",
+    "lerobot_dataset_reads_all_frames": "pass (len(dataset)=84710)",
+    "sampled_state_action_equal_to_merged_source": "pass (27 frames across 9 episodes)",
+    "sampled_frames_decode_at_224x224": "pass"
+  },
+  "features": {
+    "observation.state": {
+      "dtype": "float32",
+      "shape": [
+        12
+      ],
+      "names": [
+        "cr3.q1.rad",
+        "cr3.q2.rad",
+        "cr3.q3.rad",
+        "cr3.q4.rad",
+        "cr3.q5.rad",
+        "cr3.q6.rad",
+        "o6.thumb_flex.position",
+        "o6.thumb_yaw.position",
+        "o6.index_flex.position",
+        "o6.middle_flex.position",
+        "o6.ring_flex.position",
+        "o6.little_flex.position"
+      ]
+    },
+    "action": {
+      "dtype": "float32",
+      "shape": [
+        12
+      ],
+      "names": [
+        "cr3.target_q1.rad",
+        "cr3.target_q2.rad",
+        "cr3.target_q3.rad",
+        "cr3.target_q4.rad",
+        "cr3.target_q5.rad",
+        "cr3.target_q6.rad",
+        "o6.thumb_flex.command",
+        "o6.thumb_yaw.command",
+        "o6.index_flex.command",
+        "o6.middle_flex.command",
+        "o6.ring_flex.command",
+        "o6.little_flex.command"
+      ]
+    },
+    "observation.images.base_0_rgb": {
+      "dtype": "video",
+      "shape": [
+        224,
+        224,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channel"
+      ]
+    },
+    "observation.images.left_wrist_0_rgb": {
+      "dtype": "video",
+      "shape": [
+        224,
+        224,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channel"
+      ]
+    },
+    "observation.images.right_wrist_0_rgb": {
+      "dtype": "video",
+      "shape": [
+        224,
+        224,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channel"
+      ]
+    },
+    "timestamp": {
+      "dtype": "float32",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "frame_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "episode_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "task_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    }
+  },
+  "per_source_counts": [
+    {
+      "source": "/home/ace/datasets/data",
+      "episodes": 156,
+      "frames": 84710,
+      "excluded": []
+    }
+  ],
+  "episode_order": [
+    {
+      "episode_index": 0,
+      "length": 627,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 0
+    },
+    {
+      "episode_index": 1,
+      "length": 543,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 1
+    },
+    {
+      "episode_index": 2,
+      "length": 586,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 2
+    },
+    {
+      "episode_index": 3,
+      "length": 508,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 3
+    },
+    {
+      "episode_index": 4,
+      "length": 496,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 4
+    },
+    {
+      "episode_index": 5,
+      "length": 558,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 5
+    },
+    {
+      "episode_index": 6,
+      "length": 633,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 6
+    },
+    {
+      "episode_index": 7,
+      "length": 492,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 7
+    },
+    {
+      "episode_index": 8,
+      "length": 548,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 8
+    },
+    {
+      "episode_index": 9,
+      "length": 618,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 9
+    },
+    {
+      "episode_index": 10,
+      "length": 480,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 10
+    },
+    {
+      "episode_index": 11,
+      "length": 606,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 11
+    },
+    {
+      "episode_index": 12,
+      "length": 652,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 12
+    },
+    {
+      "episode_index": 13,
+      "length": 837,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 13
+    },
+    {
+      "episode_index": 14,
+      "length": 667,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 14
+    },
+    {
+      "episode_index": 15,
+      "length": 543,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 15
+    },
+    {
+      "episode_index": 16,
+      "length": 521,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 16
+    },
+    {
+      "episode_index": 17,
+      "length": 753,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 17
+    },
+    {
+      "episode_index": 18,
+      "length": 596,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 18
+    },
+    {
+      "episode_index": 19,
+      "length": 616,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 19
+    },
+    {
+      "episode_index": 20,
+      "length": 573,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 20
+    },
+    {
+      "episode_index": 21,
+      "length": 522,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 21
+    },
+    {
+      "episode_index": 22,
+      "length": 468,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 22
+    },
+    {
+      "episode_index": 23,
+      "length": 556,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 23
+    },
+    {
+      "episode_index": 24,
+      "length": 509,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 24
+    },
+    {
+      "episode_index": 25,
+      "length": 668,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 25
+    },
+    {
+      "episode_index": 26,
+      "length": 558,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 26
+    },
+    {
+      "episode_index": 27,
+      "length": 626,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 27
+    },
+    {
+      "episode_index": 28,
+      "length": 522,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 28
+    },
+    {
+      "episode_index": 29,
+      "length": 657,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 29
+    },
+    {
+      "episode_index": 30,
+      "length": 597,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 30
+    },
+    {
+      "episode_index": 31,
+      "length": 514,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 31
+    },
+    {
+      "episode_index": 32,
+      "length": 604,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 32
+    },
+    {
+      "episode_index": 33,
+      "length": 553,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 33
+    },
+    {
+      "episode_index": 34,
+      "length": 539,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 34
+    },
+    {
+      "episode_index": 35,
+      "length": 550,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 35
+    },
+    {
+      "episode_index": 36,
+      "length": 513,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 36
+    },
+    {
+      "episode_index": 37,
+      "length": 553,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 37
+    },
+    {
+      "episode_index": 38,
+      "length": 576,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 38
+    },
+    {
+      "episode_index": 39,
+      "length": 892,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 39
+    },
+    {
+      "episode_index": 40,
+      "length": 750,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 40
+    },
+    {
+      "episode_index": 41,
+      "length": 892,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 41
+    },
+    {
+      "episode_index": 42,
+      "length": 508,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 42
+    },
+    {
+      "episode_index": 43,
+      "length": 577,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 43
+    },
+    {
+      "episode_index": 44,
+      "length": 551,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 44
+    },
+    {
+      "episode_index": 45,
+      "length": 557,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 45
+    },
+    {
+      "episode_index": 46,
+      "length": 530,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 46
+    },
+    {
+      "episode_index": 47,
+      "length": 546,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 47
+    },
+    {
+      "episode_index": 48,
+      "length": 625,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 48
+    },
+    {
+      "episode_index": 49,
+      "length": 647,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 49
+    },
+    {
+      "episode_index": 50,
+      "length": 523,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 50
+    },
+    {
+      "episode_index": 51,
+      "length": 534,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 51
+    },
+    {
+      "episode_index": 52,
+      "length": 531,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 52
+    },
+    {
+      "episode_index": 53,
+      "length": 524,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 53
+    },
+    {
+      "episode_index": 54,
+      "length": 483,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 54
+    },
+    {
+      "episode_index": 55,
+      "length": 448,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 55
+    },
+    {
+      "episode_index": 56,
+      "length": 437,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 56
+    },
+    {
+      "episode_index": 57,
+      "length": 833,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 57
+    },
+    {
+      "episode_index": 58,
+      "length": 506,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 58
+    },
+    {
+      "episode_index": 59,
+      "length": 599,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 59
+    },
+    {
+      "episode_index": 60,
+      "length": 428,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 60
+    },
+    {
+      "episode_index": 61,
+      "length": 596,
+      "source_session": "final fantasy/cr5_o6_20260915_172625_722385566",
+      "source_episode_index": 61
+    },
+    {
+      "episode_index": 62,
+      "length": 522,
+      "source_session": "last_chance/cr5_o6_20260917_132608_842747104",
+      "source_episode_index": 0
+    },
+    {
+      "episode_index": 63,
+      "length": 556,
+      "source_session": "last_chance/cr5_o6_20260917_132608_842747104",
+      "source_episode_index": 1
+    },
+    {
+      "episode_index": 64,
+      "length": 545,
+      "source_session": "last_chance/cr5_o6_20260917_132608_842747104",
+      "source_episode_index": 2
+    },
+    {
+      "episode_index": 65,
+      "length": 474,
+      "source_session": "last_chance/cr5_o6_20260917_132608_842747104",
+      "source_episode_index": 3
+    },
+    {
+      "episode_index": 66,
+      "length": 592,
+      "source_session": "last_chance/cr5_o6_20260917_132608_842747104",
+      "source_episode_index": 4
+    },
+    {
+      "episode_index": 67,
+      "length": 425,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 0
+    },
+    {
+      "episode_index": 68,
+      "length": 950,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 1
+    },
+    {
+      "episode_index": 69,
+      "length": 459,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 2
+    },
+    {
+      "episode_index": 70,
+      "length": 447,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 3
+    },
+    {
+      "episode_index": 71,
+      "length": 434,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 4
+    },
+    {
+      "episode_index": 72,
+      "length": 440,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 5
+    },
+    {
+      "episode_index": 73,
+      "length": 517,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 6
+    },
+    {
+      "episode_index": 74,
+      "length": 604,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 7
+    },
+    {
+      "episode_index": 75,
+      "length": 570,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 8
+    },
+    {
+      "episode_index": 76,
+      "length": 624,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 9
+    },
+    {
+      "episode_index": 77,
+      "length": 533,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 10
+    },
+    {
+      "episode_index": 78,
+      "length": 579,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 11
+    },
+    {
+      "episode_index": 79,
+      "length": 437,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 12
+    },
+    {
+      "episode_index": 80,
+      "length": 470,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 13
+    },
+    {
+      "episode_index": 81,
+      "length": 467,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 14
+    },
+    {
+      "episode_index": 82,
+      "length": 472,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 15
+    },
+    {
+      "episode_index": 83,
+      "length": 437,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 16
+    },
+    {
+      "episode_index": 84,
+      "length": 522,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 17
+    },
+    {
+      "episode_index": 85,
+      "length": 640,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 18
+    },
+    {
+      "episode_index": 86,
+      "length": 539,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 19
+    },
+    {
+      "episode_index": 87,
+      "length": 697,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 20
+    },
+    {
+      "episode_index": 88,
+      "length": 564,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 21
+    },
+    {
+      "episode_index": 89,
+      "length": 595,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 22
+    },
+    {
+      "episode_index": 90,
+      "length": 508,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 23
+    },
+    {
+      "episode_index": 91,
+      "length": 463,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 24
+    },
+    {
+      "episode_index": 92,
+      "length": 527,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 25
+    },
+    {
+      "episode_index": 93,
+      "length": 406,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 26
+    },
+    {
+      "episode_index": 94,
+      "length": 612,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 27
+    },
+    {
+      "episode_index": 95,
+      "length": 481,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 28
+    },
+    {
+      "episode_index": 96,
+      "length": 539,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 29
+    },
+    {
+      "episode_index": 97,
+      "length": 649,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 30
+    },
+    {
+      "episode_index": 98,
+      "length": 623,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 31
+    },
+    {
+      "episode_index": 99,
+      "length": 506,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 32
+    },
+    {
+      "episode_index": 100,
+      "length": 537,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 33
+    },
+    {
+      "episode_index": 101,
+      "length": 431,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 34
+    },
+    {
+      "episode_index": 102,
+      "length": 550,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 35
+    },
+    {
+      "episode_index": 103,
+      "length": 582,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 36
+    },
+    {
+      "episode_index": 104,
+      "length": 607,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 37
+    },
+    {
+      "episode_index": 105,
+      "length": 544,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 38
+    },
+    {
+      "episode_index": 106,
+      "length": 527,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 39
+    },
+    {
+      "episode_index": 107,
+      "length": 620,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 40
+    },
+    {
+      "episode_index": 108,
+      "length": 688,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 41
+    },
+    {
+      "episode_index": 109,
+      "length": 604,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 42
+    },
+    {
+      "episode_index": 110,
+      "length": 595,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 43
+    },
+    {
+      "episode_index": 111,
+      "length": 587,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 44
+    },
+    {
+      "episode_index": 112,
+      "length": 495,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 45
+    },
+    {
+      "episode_index": 113,
+      "length": 406,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 46
+    },
+    {
+      "episode_index": 114,
+      "length": 417,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 47
+    },
+    {
+      "episode_index": 115,
+      "length": 517,
+      "source_session": "last_chance/cr5_o6_20260917_133051_765494656",
+      "source_episode_index": 48
+    },
+    {
+      "episode_index": 116,
+      "length": 535,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 0
+    },
+    {
+      "episode_index": 117,
+      "length": 614,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 1
+    },
+    {
+      "episode_index": 118,
+      "length": 524,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 2
+    },
+    {
+      "episode_index": 119,
+      "length": 690,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 3
+    },
+    {
+      "episode_index": 120,
+      "length": 546,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 4
+    },
+    {
+      "episode_index": 121,
+      "length": 538,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 5
+    },
+    {
+      "episode_index": 122,
+      "length": 440,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 6
+    },
+    {
+      "episode_index": 123,
+      "length": 374,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 7
+    },
+    {
+      "episode_index": 124,
+      "length": 409,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 8
+    },
+    {
+      "episode_index": 125,
+      "length": 384,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 9
+    },
+    {
+      "episode_index": 126,
+      "length": 427,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 10
+    },
+    {
+      "episode_index": 127,
+      "length": 432,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 11
+    },
+    {
+      "episode_index": 128,
+      "length": 496,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 12
+    },
+    {
+      "episode_index": 129,
+      "length": 520,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 13
+    },
+    {
+      "episode_index": 130,
+      "length": 543,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 14
+    },
+    {
+      "episode_index": 131,
+      "length": 486,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 15
+    },
+    {
+      "episode_index": 132,
+      "length": 578,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 16
+    },
+    {
+      "episode_index": 133,
+      "length": 467,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 17
+    },
+    {
+      "episode_index": 134,
+      "length": 494,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 18
+    },
+    {
+      "episode_index": 135,
+      "length": 558,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 19
+    },
+    {
+      "episode_index": 136,
+      "length": 591,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 20
+    },
+    {
+      "episode_index": 137,
+      "length": 623,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 21
+    },
+    {
+      "episode_index": 138,
+      "length": 489,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 22
+    },
+    {
+      "episode_index": 139,
+      "length": 614,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 23
+    },
+    {
+      "episode_index": 140,
+      "length": 529,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 24
+    },
+    {
+      "episode_index": 141,
+      "length": 364,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 25
+    },
+    {
+      "episode_index": 142,
+      "length": 380,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 26
+    },
+    {
+      "episode_index": 143,
+      "length": 439,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 27
+    },
+    {
+      "episode_index": 144,
+      "length": 427,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 28
+    },
+    {
+      "episode_index": 145,
+      "length": 433,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 29
+    },
+    {
+      "episode_index": 146,
+      "length": 393,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 30
+    },
+    {
+      "episode_index": 147,
+      "length": 411,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 31
+    },
+    {
+      "episode_index": 148,
+      "length": 407,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 32
+    },
+    {
+      "episode_index": 149,
+      "length": 523,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 33
+    },
+    {
+      "episode_index": 150,
+      "length": 488,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 34
+    },
+    {
+      "episode_index": 151,
+      "length": 507,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 35
+    },
+    {
+      "episode_index": 152,
+      "length": 526,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 36
+    },
+    {
+      "episode_index": 153,
+      "length": 426,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 37
+    },
+    {
+      "episode_index": 154,
+      "length": 462,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 38
+    },
+    {
+      "episode_index": 155,
+      "length": 436,
+      "source_session": "last_chance/cr5_o6_20260917_154813_615487304",
+      "source_episode_index": 39
+    }
+  ]
+}

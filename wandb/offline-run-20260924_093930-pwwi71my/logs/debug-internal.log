@@ -1,0 +1,8 @@
+{"time":"2026-09-24T09:39:30.561794654+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/je/code/openpi/wandb/offline-run-20260924_093930-pwwi71my/logs/debug-core.log"}
+{"time":"2026-09-24T09:39:30.6652718+08:00","level":"WARN","msg":"GraphQL client is nil, skipping feature loading"}
+{"time":"2026-09-24T09:39:30.665410731+08:00","level":"INFO","msg":"created new stream","id":"pwwi71my"}
+{"time":"2026-09-24T09:39:30.665437823+08:00","level":"INFO","msg":"stream: started","id":"pwwi71my"}
+{"time":"2026-09-24T09:39:30.665628218+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"pwwi71my"}
+{"time":"2026-09-24T09:39:30.665684976+08:00","level":"INFO","msg":"sender: started","stream_id":"pwwi71my"}
+{"time":"2026-09-24T09:39:30.665756151+08:00","level":"INFO","msg":"handler: started","stream_id":"pwwi71my"}
+{"time":"2026-09-24T09:39:30.673022897+08:00","level":"INFO","msg":"Starting system monitor"}

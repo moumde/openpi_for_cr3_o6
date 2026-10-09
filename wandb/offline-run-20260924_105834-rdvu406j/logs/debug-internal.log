@@ -1,0 +1,15 @@
+{"time":"2026-09-24T10:58:34.568459584+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/je/code/openpi/wandb/offline-run-20260924_105834-rdvu406j/logs/debug-core.log"}
+{"time":"2026-09-24T10:58:34.673039706+08:00","level":"WARN","msg":"GraphQL client is nil, skipping feature loading"}
+{"time":"2026-09-24T10:58:34.673201166+08:00","level":"INFO","msg":"created new stream","id":"rdvu406j"}
+{"time":"2026-09-24T10:58:34.673229871+08:00","level":"INFO","msg":"stream: started","id":"rdvu406j"}
+{"time":"2026-09-24T10:58:34.673346776+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"rdvu406j"}
+{"time":"2026-09-24T10:58:34.673426322+08:00","level":"INFO","msg":"handler: started","stream_id":"rdvu406j"}
+{"time":"2026-09-24T10:58:34.673489108+08:00","level":"INFO","msg":"sender: started","stream_id":"rdvu406j"}
+{"time":"2026-09-24T10:58:34.681950203+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2026-09-29T16:33:13.453086681+08:00","level":"INFO","msg":"stream: closing","id":"rdvu406j"}
+{"time":"2026-09-29T16:33:13.453145157+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2026-09-29T16:33:13.453301381+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2026-09-29T16:33:13.453475782+08:00","level":"INFO","msg":"handler: closed","stream_id":"rdvu406j"}
+{"time":"2026-09-29T16:33:13.453498279+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"rdvu406j"}
+{"time":"2026-09-29T16:33:13.453519025+08:00","level":"INFO","msg":"sender: closed","stream_id":"rdvu406j"}
+{"time":"2026-09-29T16:33:13.453686174+08:00","level":"INFO","msg":"stream: closed","id":"rdvu406j"}
