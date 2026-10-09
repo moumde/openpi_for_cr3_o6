@@ -63,6 +63,20 @@ LeRobot 数据集 → 归一化统计 → Pi05 LoRA 训练 → 启动策略服�
 
 ### 1. 数据和动作格式
 
+数据集和模型下载
+
+```bash
+hf download \
+  "$DATASET_REPO" \
+  --repo-type dataset \
+  --local-dir ~/datasets/cr3-o6-dataset-v21
+
+hf download \
+  "$MODEL_REPO" \
+  --repo-type model \
+  --local-dir ~/models/pi05-cr3-o6-lora
+```
+
 配置位于 [`src/openpi/training/config.py`](src/openpi/training/config.py) 的
 `pi05_cr3_o6_lora`，默认数据集为 [`dataset/data_v21`](dataset/data_v21)。数据集包含三路
 D435 RGB 图像，采样频率为 20 Hz：
