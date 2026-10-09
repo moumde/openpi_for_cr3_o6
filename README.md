@@ -63,18 +63,16 @@ LeRobot 数据集 → 归一化统计 → Pi05 LoRA 训练 → 启动策略服�
 
 ### 1. 数据和动作格式
 
-数据集和模型下载
+模型和数据集下载
 
 ```bash
-hf download \
-  "$DATASET_REPO" \
-  --repo-type dataset \
-  --local-dir ~/datasets/cr3-o6-dataset-v21
-
-hf download \
-  "$MODEL_REPO" \
+hf download YOUR_USERNAME/pi05-cr3-o6-lora \
   --repo-type model \
   --local-dir ~/models/pi05-cr3-o6-lora
+
+hf download YOUR_USERNAME/cr3-o6-dataset-v21 \
+  --repo-type dataset \
+  --local-dir ./cr3-o6-dataset-v21
 ```
 
 配置位于 [`src/openpi/training/config.py`](src/openpi/training/config.py) 的
