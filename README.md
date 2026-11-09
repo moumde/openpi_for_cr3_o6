@@ -53,6 +53,11 @@ NOTE: `GIT_LFS_SKIP_SMUDGE=1` is needed to pull LeRobot as a dependency.
 
 **Docker**: As an alternative to uv installation, we provide instructions for installing openpi using Docker. If you encounter issues with your system setup, consider using Docker to simplify installation. See [Docker Setup](docs/docker.md) for more details.
 
+## Pi05 Demonstration Videos
+
+[![Pi05 motor forward recognition](视频/covers/pi05_motor_forward.jpg)](视频/pi05_电机正向识别.mp4)
+[![Pi05 motor reverse recognition](视频/covers/pi05_motor_reverse.jpg)](视频/pi05_电机反向识别.mp4)
+
 ## CR3/O6 快速使用：`pi05_cr3_o6_lora`
 
 本节介绍 Dobot CR3 + 右手 LinkerHand O6 的完整流程：
@@ -129,7 +134,30 @@ checkpoints/pi05_cr3_o6_lora/pi05_cr3_o6_lora/<step>/
 
 例如可使用 `.../99999/`。中断后继续已有实验时，将 `--overwrite` 改为 `--resume`。
 
-### 4. 启动策略服务
+### 4. Pi05 全量微调（`pi05_cr3_o6`）
+
+该配置进行全量微调（非 LoRA），首次训练可执行：
+
+```bash
+XLA_PYTHON_CLIENT_MEM_FRACTION=0.9 \
+uv run scripts/train.py pi05_cr3_o6 \
+  --exp-name=pi05_cr3_o6 \
+  --overwrite
+```
+
+检查点默认保存到 `checkpoints/pi05_cr3_o6/pi05_cr3_o6/<step>/`。全量微调需要较大的 GPU 显存；可根据本机显存调整 batch size。
+
+启动该配置的策略服务：
+
+```bash
+examples/cr3_o6/serve_policy_cuda.sh \
+  --port 8000 \
+  policy:checkpoint \
+  --policy.config=pi05_cr3_o6 \
+  --policy.dir=checkpoints/pi05_cr3_o6/pi05_cr3_o6/<step>
+```
+
+### 5. 启动策略服务
 
 推荐使用 CR3/O6 专用脚本，它会处理 CUDA `ptxas` 路径配置：
 
@@ -144,7 +172,7 @@ examples/cr3_o6/serve_policy_cuda.sh \
 服务默认监听 `ws://127.0.0.1:8000`。如果使用其他训练实验或步数，只需替换
 `--policy.dir`。
 
-### 5. 启动 CR3/O6 推理客户端
+### 6. 启动 CR3/O6 推理客户端
 
 客户端会连接 CR3、右手 O6 和三路 D435。NRC Python 扩展要求 Python 3.12；以下命令假设
 已经进入 `openpi` Conda 环境，并且 LinkerHand SDK 位于 `/home/je/code/linkerhand-python-sdk`：
