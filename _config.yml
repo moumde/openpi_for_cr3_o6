@@ -1,0 +1,16 @@
+exclude:
+  - dataset/
+  - docs/
+  - examples/
+  - packages/
+  - scripts/
+  - src/
+  - third_party/
+  - wandb/
+  - README.md
+  - LICENSE
+  - LICENSE_GEMMA.txt
+  - Makefile
+  - pyproject.toml
+  - uv.lock
+  - ruff.toml

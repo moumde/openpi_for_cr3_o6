@@ -57,13 +57,13 @@ NOTE: `GIT_LFS_SKIP_SMUDGE=1` is needed to pull LeRobot as a dependency.
 
 ### 电机正向识别抓取
 
-[![Pi05 motor forward recognition and grasping](视频/covers/pi05_motor_forward.jpg)](https://moumde.github.io/openpi_for_cr3_o6/%E8%A7%86%E9%A2%91/pi05_%E7%94%B5%E6%9C%BA%E6%AD%A3%E5%90%91%E8%AF%86%E5%88%AB.mp4)
+[![Pi05 motor forward recognition and grasping](视频/covers/pi05_motor_forward.jpg)](https://moumde.github.io/openpi_for_cr3_o6/#forward)
 
 Pi05 identifies the forward-facing motor and performs the grasp.
 
 ### 电机反向识别抓取
 
-[![Pi05 motor reverse recognition and grasping](视频/covers/pi05_motor_reverse.jpg)](https://moumde.github.io/openpi_for_cr3_o6/%E8%A7%86%E9%A2%91/pi05_%E7%94%B5%E6%9C%BA%E5%8F%8D%E5%90%91%E8%AF%86%E5%88%AB.mp4)
+[![Pi05 motor reverse recognition and grasping](视频/covers/pi05_motor_reverse.jpg)](https://moumde.github.io/openpi_for_cr3_o6/#reverse)
 
 Pi05 identifies the reverse-facing motor and performs the grasp.
 
