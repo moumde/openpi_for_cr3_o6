@@ -13,24 +13,24 @@ For the native OpenPI framework, general installation, supported models, and PyT
 
 ## Pi05 demonstrations
 
-### 电机正向识别抓取
+### Pi05 Forward Motor Recognition and Grasping
 
-[![Pi05 motor forward recognition and grasping](视频/covers/pi05_motor_forward.jpg)](https://moumde.github.io/openpi_for_cr3_o6/#forward)
+[![Pi05 motor forward recognition and grasping](%E8%A7%86%E9%A2%91/covers/pi05_motor_forward.jpg)](https://moumde.github.io/openpi_for_cr3_o6/#forward)
 
-Pi05 识别正向摆放的电机并完成抓取。
+Pi05 recognizes a forward-facing motor and grasps it.
 
-### 电机反向识别抓取
+### Pi05 Reverse Motor Recognition and Grasping
 
-[![Pi05 motor reverse recognition and grasping](视频/covers/pi05_motor_reverse.jpg)](https://moumde.github.io/openpi_for_cr3_o6/#reverse)
+[![Pi05 motor reverse recognition and grasping](%E8%A7%86%E9%A2%91/covers/pi05_motor_reverse.jpg)](https://moumde.github.io/openpi_for_cr3_o6/#reverse)
 
-Pi05 识别反向摆放的电机并完成抓取。
+Pi05 recognizes a reverse-facing motor and grasps it.
 
 ## CR3/O6 dataset and action format
 
 The default dataset is [`dataset/data_v21`](dataset/data_v21). It contains three D435 RGB views recorded at 20 Hz: `base_0_rgb`, `left_wrist_0_rgb`, and `right_wrist_0_rgb`.
 
 - CR3 state and action: 6 joint values in radians, using absolute joint targets.
-- O6 state and action: 6 finger values in the raw `0–255` range.
+- O6 state and action: 6 finger values in the raw `0-255` range.
 - The dataset state/action size is 12. The Pi05 model uses `action_dim=32`; the CR3/O6 policy sends the first 12 output values to the robot.
 - Default task prompt: `Pick up the motor and place it on the right side with the protruding side facing left.`
 
@@ -40,7 +40,7 @@ The dataset already includes [`norm_stats.json`](dataset/data_v21/norm_stats.jso
 uv run scripts/compute_norm_stats.py --config-name pi05_cr3_o6_lora
 ```
 
-Keep CR3 values in radians and O6 values in `0–255` in the source dataset.
+Keep CR3 values in radians and O6 values in `0-255` in the source dataset.
 
 ## Train Pi05
 
